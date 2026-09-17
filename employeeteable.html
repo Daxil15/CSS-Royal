@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Manegment</title>
+    <style>
+        body{
+            background-color: aliceblue;
+        }
+        .mainDiv{
+            width: auto;
+            padding: 20px;
+            border-radius: 2px;
+            background-color: rgb(255, 255, 255);
+            box-shadow: 0 2px 4px rgb(0, 0, 0) ;
+        }
+        table{
+            width: 98%;
+            height: 200px;
+            margin: auto;
+            border-bottom:solid 1px black;
+            border-collapse: collapse;
+        }
+
+        td{
+            border-bottom:solid 1px rgb(214, 214, 214);
+            text-align: center;
+            width: 10%;
+            
+        }
+        .tableHead{
+            background-color: rgb(3, 3, 17);
+            color: whitesmoke;
+        }
+        .nameShort{
+            background-color: rgb(172, 161, 161);
+            border-radius: 100%;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+        }
+        .actStatus{
+            width: 50px;
+            height: 20px;
+            margin: 0 auto;
+            color: green;
+            background-color: rgb(139, 245, 139);
+            border-radius: 50px;
+        }
+
+        .livStatus{
+            width: 65px;
+            height: 20px;
+            margin: 0 auto;
+            color: rgb(128, 115, 0);
+            background-color: rgb(243, 229, 107);
+            border-radius: 50px;
+        }
+
+
+
+    
+    </style>
+</head>
+<body>
+    <div class="mainDiv">
+        <h1>Employee Manadement</h1>
+        <table>
+            <tr class="tableHead">
+                <th>ID</th>
+                <th>Employee</th>
+                <th>Department</th>
+                <th>Contact</th>
+                <th>Joining Date</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+            <tr>
+                <td>#101</td>
+                <td><button  class="nameShort">RS</button>&nbsp;&nbsp;&nbsp;Ronil Shah</td>
+                <td>Devlopment</td>
+                <td>ronil@gmail.com</td>
+                <td>12&nbsp;Jan&nbsp;2024</td>
+                <td><div class="actStatus">active</div></td>
+                <td>#</td>
+            </tr>
+            <tr>
+                <td>#102</td>
+                <td><button  class="nameShort">PS</button>&nbsp;&nbsp;&nbsp;Priya Shah</td>
+                <td>Design</td>
+                <td>98765&nbsp;43210</td>
+                <td>20&nbsp;Feb&nbsp;2024</td>
+                <td><div class="actStatus">active</div></td>
+                <td>#</td>
+            </tr>
+            <tr>
+                <td>#103</td>
+                <td><button  class="nameShort">AM</button>&nbsp;&nbsp;&nbsp;Amit Mehta</td>
+                <td>Management</td>
+                <td>amit@gmail.com</td>
+                <td>05&nbsp;Mar&nbsp;2023</td>
+                <td><div class="livStatus">on&nbsp;leave</div></td>
+                <td>#</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>
