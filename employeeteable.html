@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Employee Manegment</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
     <style>
         body{
             background-color: aliceblue;
@@ -23,9 +24,14 @@
             border-collapse: collapse;
         }
 
+        th{
+            text-align: left;
+            padding-left: 10px ;
+        }
+
         td{
             border-bottom:solid 1px rgb(214, 214, 214);
-            text-align: center;
+            text-align: left;
             width: 10%;
             
         }
@@ -43,32 +49,39 @@
         .actStatus{
             width: 50px;
             height: 20px;
-            margin: 0 auto;
+            margin: 0 2%;
             color: green;
             background-color: rgb(139, 245, 139);
             border-radius: 50px;
+            text-align: center;   
         }
 
         .livStatus{
             width: 65px;
             height: 20px;
-            margin: 0 auto;
+            margin: 0 2%;
             color: rgb(128, 115, 0);
             background-color: rgb(243, 229, 107);
             border-radius: 50px;
+            text-align: center;
         }
 
+        .dept{
+            text-align: left;
+        }
 
-
+        .id{
+            width: 3%;
+        }
     
     </style>
 </head>
 <body>
     <div class="mainDiv">
-        <h1>Employee Manadement</h1>
+        <h1><i class="fa-solid fa-users" style="color: rgb(0, 0, 0);"></i>&nbsp;&nbsp;Employee Manadement</h1>
         <table>
             <tr class="tableHead">
-                <th>ID</th>
+                <th class="id">ID</th>
                 <th>Employee</th>
                 <th>Department</th>
                 <th>Contact</th>
@@ -77,27 +90,27 @@
                 <th>Actions</th>
             </tr>
             <tr>
-                <td>#101</td>
+                <td class="id">#101</td>
                 <td><button  class="nameShort">RS</button>&nbsp;&nbsp;&nbsp;Ronil Shah</td>
-                <td>Devlopment</td>
+                <td class="dept"><i class="fa-solid fa-code" style="color: rgb(0, 0, 0);"></i>&nbsp;Devlopment</td>
                 <td>ronil@gmail.com</td>
                 <td>12&nbsp;Jan&nbsp;2024</td>
                 <td><div class="actStatus">active</div></td>
                 <td>#</td>
             </tr>
             <tr>
-                <td>#102</td>
+                <td class="id">#102</td>
                 <td><button  class="nameShort">PS</button>&nbsp;&nbsp;&nbsp;Priya Shah</td>
-                <td>Design</td>
+                <td class="dept"><i class="fa-solid fa-palette" style="color: rgb(0, 0, 0);"></i>&nbsp;Design</td>
                 <td>98765&nbsp;43210</td>
                 <td>20&nbsp;Feb&nbsp;2024</td>
                 <td><div class="actStatus">active</div></td>
                 <td>#</td>
             </tr>
             <tr>
-                <td>#103</td>
+                <td class="id">#103</td>
                 <td><button  class="nameShort">AM</button>&nbsp;&nbsp;&nbsp;Amit Mehta</td>
-                <td>Management</td>
+                <td class="dept">Management</td>
                 <td>amit@gmail.com</td>
                 <td>05&nbsp;Mar&nbsp;2023</td>
                 <td><div class="livStatus">on&nbsp;leave</div></td>
