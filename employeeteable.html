@@ -47,9 +47,10 @@
             text-align: center;
         }
         .actStatus{
-            width: 50px;
-            height: 20px;
+            width: 70px;
+            height: 25px;
             margin: 0 2%;
+            padding-top: 3%;
             color: green;
             background-color: rgb(139, 245, 139);
             border-radius: 50px;
@@ -57,9 +58,10 @@
         }
 
         .livStatus{
-            width: 65px;
-            height: 20px;
+            width: 85px;
+            height: 25px;
             margin: 0 2%;
+            padding-top: 3%;
             color: rgb(128, 115, 0);
             background-color: rgb(243, 229, 107);
             border-radius: 50px;
@@ -72,6 +74,54 @@
 
         .id{
             width: 3%;
+        }
+        .eye{
+            width: 25px;
+            height: 25px;
+            background-color: lightblue;
+            border-radius: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .eye:hover{
+            transform: scale(1.2);  
+            background-color: dodgerblue; 
+            cursor: pointer;
+        }
+        .pen{
+            width: 25px;
+            height: 25px;
+            background-color: rgb(245, 245, 181);
+            border-radius: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .pen:hover {
+            transform: scale(1.2);              
+            background-color: rgb(215, 215, 100);  
+            cursor: pointer;                       
+        }
+
+        .bin{
+            width: 25px;
+            height: 25px;
+            background-color: rgb(255, 205, 212);
+            border-radius: 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .bin:hover {
+            transform: scale(1.2);                 
+            background-color: rgb(235, 140, 150);
+            cursor: pointer;                      
+        }
+
+        .eye_main {
+            display: flex;       /* Aligns children in a horizontal row */
+            gap: 10px;          /* Adds space between the two boxes */
         }
     
     </style>
@@ -95,8 +145,14 @@
                 <td class="dept"><i class="fa-solid fa-code" style="color: rgb(0, 0, 0);"></i>&nbsp;Devlopment</td>
                 <td>ronil@gmail.com</td>
                 <td>12&nbsp;Jan&nbsp;2024</td>
-                <td><div class="actStatus">active</div></td>
-                <td>#</td>
+                <td><div class="actStatus"><i class="fa-solid fa-circle-check" style="color: rgb(0, 128, 0); font-size: 10"></i>&nbsp;active</div></td>
+                <td>
+                    <div class="eye_main">
+                        <div class="eye"><i class="fa-solid fa-eye" style="color: rgb(9, 9, 9);"></i></div>
+                        <div class="pen"><i class="fa-solid fa-pen" style="color: rgb(9, 9, 9);"></i>   </div>
+                        <div class="bin"><i class="fa-solid fa-trash" style="color: rgb(9, 9, 9);"></i></div>
+                    </div>
+                </td>
             </tr>
             <tr>
                 <td class="id">#102</td>
@@ -104,8 +160,14 @@
                 <td class="dept"><i class="fa-solid fa-palette" style="color: rgb(0, 0, 0);"></i>&nbsp;Design</td>
                 <td>98765&nbsp;43210</td>
                 <td>20&nbsp;Feb&nbsp;2024</td>
-                <td><div class="actStatus">active</div></td>
-                <td>#</td>
+                <td><div class="actStatus"><i class="fa-solid fa-circle-check" style="color: rgb(0, 128, 0); font-size: 10"></i>&nbsp;active</div></td>
+                <td>
+                    <div class="eye_main">
+                        <div class="eye"><i class="fa-solid fa-eye" style="color: rgb(9, 9, 9);"></i></div>
+                        <div class="pen"><i class="fa-solid fa-pen" style="color: rgb(9, 9, 9);"></i></div>
+                        <div class="bin"><i class="fa-solid fa-trash" style="color: rgb(9, 9, 9);"></i></div>
+                    </div>
+                </td>
             </tr>
             <tr>
                 <td class="id">#103</td>
@@ -113,8 +175,14 @@
                 <td class="dept">Management</td>
                 <td>amit@gmail.com</td>
                 <td>05&nbsp;Mar&nbsp;2023</td>
-                <td><div class="livStatus">on&nbsp;leave</div></td>
-                <td>#</td>
+                <td><div class="livStatus"><i class="fa-solid fa-clock" style="color: rgb(128, 115, 0);"></i>&nbsp;on&nbsp;leave</div></td>
+                <td>
+                    <div class="eye_main">
+                        <div class="eye"><i class="fa-solid fa-eye" style="color: rgb(9, 9, 9);"></i></div>
+                        <div class="pen"><i class="fa-solid fa-pen" style="color: rgb(9, 9, 9);"></i></div>
+                        <div class="bin"><i class="fa-solid fa-trash" style="color: rgb(9, 9, 9);"></i></div>
+                    </div>
+                </td>
             </tr>
         </table>
     </div>
