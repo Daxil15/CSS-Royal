@@ -1,0 +1,30 @@
+body{
+            margin: 0;
+            background-color: #cacaca;
+        }
+        .header{
+            height: 120px;
+            background-color: #2b2f33;
+            color: white;
+            padding: 1px;
+            text-align: center;
+            border-bottom: orange 5px solid;
+        }
+        p{
+            font-size: large;
+        }
+        .content{
+            height: 650px;
+            width: 550px;
+            background-color: white;
+            border-radius: 15px;
+            margin: 30px auto; 
+        }
+        .footer{
+            height: 80px;
+            background-color: #2b2f33;
+            color: white;
+            padding: 1px;
+            text-align: center;
+            border-top: orange 5px solid;
+        }
