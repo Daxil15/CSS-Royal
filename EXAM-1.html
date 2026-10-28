@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <style>
+        body{
+            background-color: rgb(179, 177, 169);
+            margin-top: 10px;
+        }
+        h1{
+            color: rgb(24, 24, 87);
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            text-align: center;
+        }
+        .container{
+            background-color: white;
+            width: 750px;
+            height: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            color: rgb(21, 126, 145);
+            border: 1px solid white ;
+            border-radius: 10px;
+        }
+        .box{
+            background-color: rgb(186, 219, 224);
+            width: 250px;
+            height: 150px;
+            color: black;
+            text-align: center;
+            padding-top: 50px;
+            border: 2px solid rgb(96, 143, 151);
+        }
+        .p-1{
+            font-size: larger;
+            color: blueviolet;
+            text-shadow: 5px 5px 5px rgb(67, 30, 102);
+        }
+        .p-2{
+            font-size: large;
+            color: blue;
+            text-shadow: 5px 5px 5px rgb(78, 78, 238);
+        }
+        .pd-1{
+            color:black;
+            text-decoration: underline;
+        }
+        .pd-2{
+            color: black;
+            text-decoration: overline red;
+        }
+        .pd-3{
+            color: black;
+            text-decoration: line-through;
+        }
+        .pd-4{
+            color: green;
+            text-decoration: none;
+        }
+        .box-1{
+            width: 200px;
+            height: 25px;
+            padding-top: 5%;
+            text-align: center;
+            box-shadow: 5px 5px 5px 2px gray;
+            color: black;
+        }
+
+        .box-2{
+            width: 200px;
+            height: 25px;
+            padding-top: 5%;
+            text-align: center;
+            box-shadow: 5px 5px 7px 6px rgb(63, 63, 63);
+            color: black;
+        }
+        .box-3{
+            width: 200px;
+            height: 25px;
+            padding-top: 5%;
+            text-align: center;
+            box-shadow: 5px 5px 7px 6px rgb(63, 63, 63);
+            color: black;
+        }
+        .box-3:hover{
+            box-shadow: 5px 5px 7px 6px rgb(0, 0, 0);
+        }
+
+    </style>
+</head>
+<body>
+    <h1>CSS Practice Damo</h1>
+    <div class="container">
+        <h2>1. Height and Width</h2>
+        <div class="box"><p>Height: 150px</p><p>Width: 250px</p></div>
+    </div>
+    <br>
+    <div class="container">
+        <h2>2. Text Shadow</h2>
+        <p class="p-1">Welcome to CSS</p>
+        <p class="p-2">Css Effects</p>
+    </div>
+    <br>
+    <div class="container">
+        <h2>3. Text Decoration</h2>
+        <p class="pd-1">Text has Underline</p>
+        <p class="pd-2">Text has Overline</p>
+        <p class="pd-3">Text has line through</p>
+        <p><a class="pd-4">Link without under-line</a></p>
+    </div>
+    <br>
+    <div class="container">
+        <h2>4. Box Shadow</h2>
+        <div class="box-1">Simple Shadow</div><br>
+        <div class="box-2">Deep shadow</div><br>
+        <div class="box-3">Move mouse over me</div>
+    <div>
+</body>
+</html>
