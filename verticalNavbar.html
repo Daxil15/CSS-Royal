@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Icon | Navbar</title>
+    <style>
+        body{
+            background-color: rgb(199, 224, 246);
+            padding: 10px;
+        }
+        nav{
+            font-size: 30px;
+        }
+
+        img{
+            padding: 10px;
+        }
+        
+        .index{
+            border: 2px;
+            border-radius: 10px;
+            list-style-type: none;
+            background-color: white;
+            width: 50px;
+            padding-left: 15px;
+            padding-right: 15px;
+            margin: 0;
+        }
+
+        .home :hover{
+            background-color: rgb(190, 190, 243);
+            border: 2px;
+            border-radius: 10px;
+        }
+
+        .message :hover{
+            background-color: rgb(190, 190, 243);
+            border: 2px;
+            border-radius: 10px;
+        }
+
+        .group :hover{
+            background-color: rgb(190, 190, 243);
+            border: 2px;
+            border-radius: 10px;
+        }
+        
+        .folder :hover{
+            background-color: rgb(190, 190, 243);
+            border: 2px;
+            border-radius: 10px;
+        }
+        
+        .box :hover{
+            background-color: rgb(190, 190, 243);
+            border: 2px;
+            border-radius: 10px;
+        }
+        
+        .question :hover{
+            background-color: rgb(190, 190, 243);
+            border: 2px;
+            border-radius: 10px;
+        }
+        
+        .setting :hover{
+            background-color: rgb(190, 190, 243);
+            border: 2px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul class="index">
+            <li class="home"><a href="@"><img src="home (1).png"></a></li>
+            <li class="message"><a href="@"><img src="message.png"></a></li>
+            <li class="group"><a href="@"><img src="team.png"></a></li>
+            <li class="folder"><a href="@"><img src="folder.png"></a></li>
+            <li class="box"><a href="@"><img src="box (1).png"></a></li>
+            <li class="question"><a href="@"><img src="question.png"></a></li>
+            <li class="setting"><a href="@"><img src="setting.png"></a></li>
+        </ul>
+    </nav>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Icon | Navbar</title>
+
+    <style>
+        body{
+            background-color: rgb(218, 227, 245);
+            padding: 28px;                      /* space around the navbar */
+        }
+        .navbar{
+            background-color: rgb(255, 255, 255);
+            width: 153px;                       /* was 50px */
+            padding: 28px;                      /* new */
+            border-radius: 22px;                /* was 10% */
+            box-sizing: border-box;             /* new */
+            /* removed fixed height so it grows with the 7 icons */
+        }
+        .nav-list{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;                         /* was "1" with no unit */
+        }
+        .nav-list li{                           /* new: each icon box */
+            position: relative;
+            width: 97px;
+            height: 97px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 26px;
+            color: #5b6577;
+        }
+        .nav-list svg{                          /* new: icon style */
+            width: 38px;
+            height: 38px;
+            fill: none;
+            stroke: currentColor;
+            stroke-width: 1.8;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+        .active{                                /* new: blue Projects button */
+            background-color: #3f6fe0;
+            color: white;
+        }
+        .label{                                 /* new: "Projects" pill */
+            position: absolute;
+            left: 125px;
+            padding: 20px 22px;
+            background: white;
+            color: #3f6fe0;
+            font: bold 22px "Segoe UI", Arial, sans-serif;
+            border-radius: 35px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <ul class="nav-list">
+            Home 
+            <li><svg viewBox="0 0 24 24"><path d="M3 10.5 12 3l9 7.5V19a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9.5 21v-6.5a2.5 2.5 0 0 1 5 0V21"/></svg></li>
+            Chat 
+            <li><svg viewBox="0 0 24 24"><path d="M5 4h14a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H9l-5 4V6a2 2 0 0 1 1-2z"/></svg></li>
+            Team 
+            <li><svg viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c0-3.6 2.9-6 6.5-6s6.5 2.4 6.5 6"/><path d="M15.5 4.7a3.5 3.5 0 0 1 0 6.6"/><path d="M18 14.3c2 .8 3.5 2.7 3.5 5.7"/></svg></li>
+            Projects (active) 
+            <li class="active">
+                <svg viewBox="0 0 24 24"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg>
+                <span class="label">Projects</span>
+            </li>
+            Archive 
+            <li><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="5" rx="1.5"/><path d="M5 9v9a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V9"/><path d="M10 13h4"/></svg></li>
+            Help 
+            <li><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9.5"/><path d="M9.3 9.3a2.8 2.8 0 1 1 3.9 2.6c-.8.4-1.2 1-1.2 1.8"/><path d="M12 17.2h.01"/></svg></li>
+            Settings 
+            <li><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></li>
+        </ul>
+    </div>
+</body>
+</html> -->
