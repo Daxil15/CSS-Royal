@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-Index</title>
+    <style>
+        div{
+            margin: 20px;
+            position: absolute;
+        }
+        .red{
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            border: 2px solid black;
+            left: 150px;
+            top:100px;
+            opacity: 50%;
+            z-index: 3;
+        }
+        .green{
+            height: 200px;
+            width: 200px;
+            background-color: green;
+            border: 2px solid black;
+            left: 150px;
+            top:250px;
+            opacity: 50%;
+            z-index: 1;
+        }
+        .blue1{
+            height: 200px;
+            width: 200px;
+            background-color: blue;
+            border: 2px solid black;
+            left: 300px;
+            top:250px;
+            opacity: 50%;
+            z-index: 2;
+        }
+        .yellow{
+            height: 200px;
+            width: 200px;
+            background-color: yellow;
+            border: 2px solid black;
+            left: 300px;
+            top:100px;
+            opacity: 50%;
+            z-index: 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="red"></div>
+    <div class="green"></div>
+    <div class="blue1"></div>
+    <div class="yellow"></div>
+    <div class="brown"></div>
+</body>
+</html>
